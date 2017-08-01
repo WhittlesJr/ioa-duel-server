@@ -1,0 +1,15 @@
+{
+  "name": "ioa-duel-server",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
