@@ -6,5 +6,6 @@
    :headers {"Content-Type" "text/html"}
    :body "Hello World"})
 
-(defn -main []
-  (jetty/run-jetty handler {:port 3000}))
+(defn -main [& [port]]
+  (let [port (Integer. (or port (env :port) 5000))]
+    (jetty/run-jetty handler {:port port})))
