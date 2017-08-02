@@ -1,4 +1,4 @@
-(defproject ioa-duel-server "0.1.0"
+(defproject ioa-duel-server "0.1.1"
   :description "Web server application for the IoA-Duel game (WIP)"
   :url "http://invokeawesome.com/duel"
   :uberjar-name "ioa-duel-server-standalone.jar"
