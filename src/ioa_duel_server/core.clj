@@ -1,5 +1,7 @@
 (ns ioa-duel-server.core
-  (:require [ring.adapter.jetty :as jetty]))
+  (:require [ring.adapter.jetty :as jetty]
+            [environ.core :refer [env]])
+  (:gen-class))
 
 (defn handler [request]
   {:status 200

@@ -9,5 +9,6 @@
                  [environ "1.0.0"]]
   :plugins [[environ/environ.lein "0.3.1"]]
   :hooks [environ.leiningen.hooks]
-  :main ioa-duel-server.core
-  :profiles {:production {:env {:production true}}})
+  :main ^:skip-aot ioa-duel-server.core
+  :profiles {:production {:env {:production true}}
+             :uberjar {:aot :all}})
